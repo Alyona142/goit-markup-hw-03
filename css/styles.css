@@ -52,6 +52,7 @@ a{
 .header-nav{
     display: flex;
     align-items: center;
+    gap: 40px;
     }
 
 
@@ -134,7 +135,7 @@ a{
 
 .page-main{
     background-color: #2e2f42;
-    padding: 188px auto;
+    padding: 188px o;
     margin-right: auto;
     margin-left: auto;
 }
@@ -185,7 +186,15 @@ a{
     background-color: #404bbf;
 }
   
-.advantages-container{
+.page-advantages{
+    padding: 120px 0;
+}
+
+.visually-hedden{
+    position: absolute;
+}
+
+.advantages-container {
     display: flex;
     align-items: center;
     margin-bottom: 120px;
@@ -202,13 +211,15 @@ a{
 
 .list-advantages{
     display: flex;
-    display: block;
-   align-self: center;
-   gap: 40px; 
+   align-items: center;
+   gap: 24px; 
 }
  
+
 .name-advantages{
+    width: calc((100%-72px)/4);
     padding: 8px 0;
+    margin-bottom: 8px;
     justify-content: flex-start;
     font-weight: 500;
     font-size: 20px;
