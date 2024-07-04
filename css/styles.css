@@ -78,7 +78,7 @@ a{
 
 .nav-list{
     display: flex;
-    align-self: center;
+    align-items: center;
     gap: 40px;
 }
 
@@ -110,7 +110,7 @@ a{
 
 .contacts-list{
     display: flex;
-    align-self: center;
+    align-items: center;
     gap: 40px;
 }
 
