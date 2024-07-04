@@ -214,14 +214,10 @@ a{
  
 .item-advantages{
     max-width:calc((100% - 72px) / 4);
-    /*margin-right: 24px;
 }
 
 .name-advantages{
-    /*width: calc((100% - 72px) / 4);*/
-    /*margin-bottom: 8px;*/
     margin-bottom: 8px;
-    /*justify-content: flex-start;*/
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -235,7 +231,6 @@ a{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    /*text-align: center;*/
     color: #434455;
     padding: 0;
 }  
@@ -260,6 +255,7 @@ a{
     }
 
 .title-team {
+    margin-bottom: 8px;
         margin-bottom:72px;
         align-items: center;
         font-weight: 700;
@@ -309,7 +305,9 @@ a{
     text-align: center;
     color: #434455;
 }
-
+.page-portfolio{
+    padding: 120px 0;
+}
 .container-portfolio{
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
@@ -328,15 +326,28 @@ a{
     margin-bottom: 72px;
 }
 
+.list-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
 .item-portfolio{
+    width: calc((100% - 48px) / 3)
     background-color: #ffffff;
     gap: 24px 48px;
 }
 
-.img{
+.img-portfolio{
     display: block;
 }
 
+.portfolio-cont{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
 
 .names{
     display: block;
