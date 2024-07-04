@@ -84,10 +84,13 @@ a{
 }
 
 .nav-item{
+    display: flex;
+    gap: 40px;
     margin-right: 40px;
 }
 
 .nav-link{
+
     display: block;
     gap: 40px;
     margin-right: 40px;
@@ -175,11 +178,10 @@ a{
     color: #fff;
     background-color: #4d5ae5;
     border-radius: 4px;
-}
-
-.button{
-cursor: pointer;
-border: none;
+    cursor: pointer;
+    border: none;
+    min-width: 169px;
+    height: 56px;
 }
 
 .button:hover,
@@ -189,6 +191,13 @@ border: none;
   
 .page-advantages{
     padding: 120px 0;
+}
+
+.advantages-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 120px;
 }
 
 .visually-hidden {
@@ -203,12 +212,6 @@ border: none;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
-
-.advantages-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 120px;
 }
 
 .accent{
@@ -226,13 +229,12 @@ border: none;
 }
  
 .item-advantages{
-    width: calc((100% - 72px) / 4);
     width: 264px;
     margin-right: 24px;
 }
 
 .name-advantages{
-    
+    width: calc((100% - 72px) / 4);
     padding: 8px 0;
     margin-bottom: 8px;
     justify-content: flex-start;
@@ -254,7 +256,7 @@ border: none;
 }  
 
 .page-team {
-    padding-bottom: 120px;
+    padding: 120px 0;
     text-transform: capitalize;
     background-color: #f4f4fd;
     font-weight: 700;
