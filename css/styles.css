@@ -134,7 +134,7 @@ a{
 
 .page-main{
     background-color: #2e2f42;
-    padding: 188px 472px 292px;
+    padding: 188px auto;
     margin-right: auto;
     margin-left: auto;
 }
