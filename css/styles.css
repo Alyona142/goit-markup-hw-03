@@ -141,7 +141,10 @@ a{
 .page-main{
     background-color: #2e2f42;
     padding: 188px 472px 292px;
+    margin-right: auto;
+    margin-left: auto;
 }
+
 .page-title{
     max-width: 496px;
     height: 120px;
@@ -159,6 +162,8 @@ a{
 
 .button{
     display: block;
+    min-width: 169px;
+    height: 56px;
     padding: 16px 32px;
     margin-right: auto;
     margin-top: 48px;
@@ -172,6 +177,8 @@ a{
     color: #fff;
     background-color: #4d5ae5;
     cursor: pointer;
+    border: none;
+    border-radius: 4px;
 }
 
 .button:hover,
