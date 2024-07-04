@@ -87,7 +87,7 @@ a{
 }
 
 .nav-link{
-    display: flex;
+    display: block;
     gap: 40px;
     margin-right: 40px;
     padding: 24px 0;
@@ -144,10 +144,10 @@ a{
 }
 .page-title{
     max-width: 496px;
-    margin: 0 auto;
     height: 120px;
     padding-top: 188px;
     margin-right: auto;
+    margin-left: auto;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
