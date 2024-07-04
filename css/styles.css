@@ -135,7 +135,8 @@ a{
 
 .page-main{
     background-color: #2e2f42;
-    padding: 188px o;
+    padding-top: 188px;
+    padding-bottom: 188px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -146,6 +147,7 @@ a{
     padding: 188px 0;
 }
 .page-title{
+    flex-wrap: wrap;
     max-width: 496px;
     height: 120px;
     padding-top: 188px;
@@ -215,11 +217,8 @@ a{
    gap: 24px; 
 }
  
-.list-advantages{
-    width: calc((100% - 72px) / 4);
-}
-
 .name-advantages{
+    width: calc((100% - 72px) / 4);
     padding: 8px 0;
     margin-bottom: 8px;
     justify-content: flex-start;
@@ -241,7 +240,6 @@ a{
 }  
 
 .page-team {
-    padding-top: 120px;
     padding-bottom: 120px;
     text-transform: capitalize;
     background-color: #f4f4fd;
@@ -256,6 +254,8 @@ a{
 .team-container{
     display: flex;
     align-items: center;
+    gap: 24px;
+    padding-top: 120px;
     }
 
 .title-team {
@@ -278,24 +278,23 @@ a{
 
 .item-team{
     background-color: #FFFFFF;
-    width: calc((100%-72px)/4);
     border-radius: 0px 0px 4px 4px;
 }
 
-.teams{
-    padding: 32px o;
-}
-
-.img-team{
+.img-team {
     display: block;
     max-width: 100%;
     margin-top: 72px;
     margin-bottom: 32px;
     margin-right: 24px;
 }
+.teams{
+    padding: 32px o;
+}
 
 .name-team,
 .proff{
+    width: calc((100% - 72px) / 4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -311,7 +310,7 @@ a{
     text-align: center;
     color: #2e2f42;
     text-align: center;
-    margin-top: 8px;
+    margin-bottom: 8px
 }
 
 .proff{
@@ -333,6 +332,11 @@ a{
     color: #2e2f42;
 }
 
+.page-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+
+}
 .title-portfolio{
     text-transform: capitalize;
     background-color: #f4f4fd;
@@ -343,9 +347,10 @@ a{
     text-align: center;
     color: #2e2f42;
 }
-   
+
 .item-portfolio{
     background-color: #ffffff;
+    gap: 24px 48px;
 }
 
 .names{
@@ -368,6 +373,11 @@ footer{
     background-color: #2e2f42;
 }
 
+.page-footer{
+padding: 100px 0;
+margin-right: auto;
+}
+
 .footer-logo{
     color: #4d5ae5;
     font-family: "Raleway", sans-serif;
@@ -376,6 +386,8 @@ footer{
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 16px;
+    display: inline-block
 }
 
 .logo-footer{
@@ -386,10 +398,14 @@ footer{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #f4f4fd;
+    display: inline-block;
+    padding: 16px;
 }
 
 .text-logo{
+    max-width: 264px;
     font-weight: 400;
+    flex-wrap: wrap;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
