@@ -147,6 +147,9 @@ a{
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     color: #fff;
 }
@@ -236,44 +239,30 @@ a{
 .title-team {
 
         margin-bottom:72px;
-        align-items: center;
         font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
-        background-color: #f4f4fd;
+     text-transform: capitalize;
         }
 
 .list-team{
         display: flex;
-        align-items:center;
         gap: 24px;
     }    
 
 .item-team{
-    background-color: #FFFFFF;
-    border-radius: 0px 0px 4px 4px;
+max-width: calc((100% - 72px) / 4);
 }
 
 .img-team {
-    display: block;
-}
-
-.teams{
-    padding: 32px o;
-}
-
-.name-team{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #2e2f42;
-    text-align: center;
-    margin-bottom: 8px
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+    width: 264px;
+    height: 380px;
 }
 
 .proff{
@@ -284,9 +273,18 @@ a{
     text-align: center;
     color: #434455;
 }
+
 .page-portfolio{
-    padding: 120px 0;
+    padding: 120px 0 120px 0;
 }
+
+.list-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
 .container-portfolio{
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
@@ -305,27 +303,8 @@ a{
     margin-bottom: 72px;
 }
 
-.list-portfolio{
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
-}
-
 .item-portfolio{
-    width: calc((100% - 48px) / 3)
-    background-color: #ffffff;
-    gap: 24px 48px;
-}
-
-.img-portfolio{
-    display: block;
-}
-
-.portfolio-cont{
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
+    width: calc((100% - 48px) / 3);
 }
 
 .names{
@@ -335,7 +314,6 @@ a{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    background-color: #ffffff;
     margin-bottom: 8px;
 }
 
@@ -348,6 +326,10 @@ a{
     letter-spacing: 0.02em;
     color: #434455;
 }
+.img-portfolio{
+    display: block;
+}
+
 
 footer{
     background-color: #2e2f42;
