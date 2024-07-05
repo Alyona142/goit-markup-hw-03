@@ -5,14 +5,14 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    min-width: 320px;
 }
 
 /*reset*/
 ul,
 ol{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    
 }
 
 h1,
@@ -37,6 +37,8 @@ a{
     padding: 0 15px;
 }
 
+/*header*/
+
 .page-header{
     border-bottom: 1px solid #e7e9fc;
 }
@@ -44,18 +46,24 @@ a{
 .header-container{
     display: flex;
     align-items: center;
-    margin: 0 auto;
-    padding: 0 15px;
+
 }
 
 
 .header-nav{
     display: flex;
     align-items: center;
-    gap: 40px;
     }
 
+    .nav-list{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
 
+    .img{
+        display: block;
+    }
 /*logo*/
 
 .logo{
@@ -77,22 +85,9 @@ a{
     color: #2e2f42;
 }
 
-.nav-list{
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.nav-item{
-    display: flex;
-    gap: 40px;
-    margin-right: 40px;
-}
-
 .nav-link{
     display: block;
     gap: 40px;
-    margin-right: 40px;
     padding: 24px 0;
     font-weight: 500;
     font-size: 16px;
@@ -131,47 +126,36 @@ a{
     color: #404bbf;
 }
 
-.page-logo{
+/*hero*/
+
+.hero{
     background-color: #2e2f42;
+    display: flex;
+    align-items: center;
+    padding: 188px o;
 }
 
 .page-main{
     background-color: #2e2f42;
     padding-top: 188px;
     padding-bottom: 188px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
-.page-container {
-    display: flex;
-    align-items: center;
-    padding: 188px 0;
-}
+
 .page-title{
-    flex-wrap: wrap;
-    max-width: 496px;
-    height: 120px;
-    padding-top: 188px;
-    margin-right: auto;
-    margin-left: auto;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    background-color: #2e2f42;
 }
 
-.button-b{
+.button{
+    font-family: "Roboto", sans-serif;
     display: block;
-    padding: 16px 32px;
-    margin: 0 auto;
-    text-align: center;
-    font-family: inherit;
     font-weight: 500;
-    font-size: 16px;
+    margin:48px  auto  0;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
@@ -179,20 +163,17 @@ a{
     border-radius: 4px;
     cursor: pointer;
     border: none;
-    min-width: 169px;
+    max-width: 169px;
     height: 56px;
+
 }
 
 .button:hover,
 .button:focus{
     background-color: #404bbf;
 }
-  
-.page-advantages{
-    padding: 120px 0;
-}
 
-.visually-hidden {
+ .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -204,10 +185,15 @@ a{
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+ 
+.page-advantages{
+    padding: 120px 0 120px;
+}
+
 
 .list-advantages{
     display: flex;
-   align-items: center;
+    align-items: center;
    gap: 24px;
 }
  
@@ -246,15 +232,9 @@ a{
     color: #2e2f42;
 }
 
-.team-container{
-   display: flex;
-   align-items: center;
-    gap: 24px;
-    padding-top: 120px;
-    }
 
 .title-team {
-    margin-bottom: 8px;
+
         margin-bottom:72px;
         align-items: center;
         font-weight: 700;
@@ -399,7 +379,6 @@ margin-right: auto;
     text-transform: uppercase;
     color: #f4f4fd;
     display: inline-block;
-    padding: 16px;
 }
 
 .text-logo{
